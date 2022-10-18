@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FakeStore</string>
+    <string name="product_name">Product Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
 </resources>

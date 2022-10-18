@@ -3,6 +3,7 @@ package com.example.fakestore.list.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.fakestore.DetailsActivity
 import com.example.fakestore.databinding.ActivityMainBinding
 import com.example.fakestore.list.data.model.ProductRemote
 import com.example.fakestore.list.ui.adapter.ProductsListAdapter
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun openDetailsActivity(product: ProductRemote) {
-
+    private fun openDetailsActivity(product: ProductRemote) {
+        startActivity(DetailsActivity.getIntent(this, product))
     }
 }
